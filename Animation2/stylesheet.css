@@ -1,0 +1,131 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    margin: 0;
+    background-image: url(background-01.png);
+    background-size: cover;}
+
+img {
+    max-width: 100%;
+    display: block;}
+
+#wrapper {
+    overflow: hidden;}
+
+#fish {
+    position: relative; 
+    top: 300px;
+    animation: swim 15s infinite;}
+
+#fin {
+    position: relative;
+    top: 80px;
+    left: 120px;
+    animation: fin 15s infinite;}
+
+#bubbles {
+    position: relative; 
+    left: 200px;
+    top: 400px;
+    animation: bubbles 15s infinite;}
+#bubbles2 {
+    position: relative; 
+    left: 300px;
+    top: 400px;
+    animation: bubbles 20s infinite;}
+#bubbles3 {
+    position: relative; 
+    left: 900px;
+    top: 400px;
+    animation: bubbles 8s infinite;}
+#bubbles4 {
+    position: relative; 
+    left: 500px;
+    top: 400px;
+    animation: bubbles 10s infinite;}
+#bubbles5 {
+    position: relative; 
+    left: 800px;
+    top: 400px;
+    animation: bubbles 15s infinite;}
+#bubbles6 {
+    position: relative; 
+    left: 700px;
+    top: 400px;
+    animation: bubbles 5s infinite;}
+#bubbles7 {
+    position: relative; 
+    left: 1100px;
+    top: 400px;
+    animation: bubbles 20s infinite;}
+#bubbles8 {
+    position: relative; 
+    left: 500px;
+    top: 400px;
+    animation: bubbles 10s infinite;}
+#bubbles9 {
+    position: relative; 
+    left: 900px;
+    top: 400px;
+    animation: bubbles 8s infinite;}
+
+@keyframes bubbles {
+    15%{transform: translateX(0px) translateY(0px);}
+    100%{transform: translateX(-300px) translateY(-1200px);}}
+
+@keyframes swim {
+    10%{transform: translateX(300px);}
+    15%{transform: translateX(350px) translateY(-150px);}
+    20%{transform: translateX(400px) translateY(-200px);}
+    25%{transform: translateX(350px) translateY(-200px);}
+    30%{transform: translateX(300px) translateY(-200px) rotateZ(-100deg);}
+    35%{transform: translateX(275px) translateY(-210px) rotateZ(-140deg);}
+    40%{transform: translateX(250px) translateY(-220px) rotateZ(-180deg);}
+    45%{transform: translateX(225px) translateY(-210px) rotateZ(-210deg);}
+    50%{transform: translateX(200px) translateY(-200px) rotateZ(-240deg);}
+    55%{transform: translateX(175px) translateY(-175px) rotateZ(-300deg);}
+    60%{transform: translateX(150px) translateY(-150px) rotateZ(-360deg);}
+    65%{transform: translateX(275px) translateY(-75px) rotateZ(-180deg);}
+    70%{transform: translateX(400px);}
+    75%{transform: translateX(450px) translateY(-75px);}
+    80%{transform: translateX(500px) translateY(-150px);}
+    85%{transform: translateX(550px) translateY(-375px);}
+    90%{transform: translateX(600px);}
+    95%{transform: translateX(900px) translateY(-100px);}
+    100%{transform: translateX(1200px) translateY(-200px);}
+    }
+
+
+@keyframes fin {
+    10%{transform: translateX(300px) rotateX(60deg);}
+    15%{transform: translateX(350px) translateY(-150px) rotateX(0deg);}
+    20%{transform: translateX(400px) translateY(-200px) rotateX(60deg);}
+    25%{transform: translateX(375px) translateY(-200px) rotateZ(-50deg) rotateX(0deg);}
+    30%{transform: translateX(375px) translateY(-200px) rotateZ(-100deg) rotateX(60deg);}
+    35%{transform: translateX(350px) translateY(-220px) rotateZ(-140deg) rotateX(0deg);}
+    40%{transform: translateX(300px) translateY(-220px) rotateZ(-180deg) rotateX(60deg);}
+    45%{transform: translateX(275px) translateY(-220px) rotateZ(-210deg) rotateX(0deg);}
+    50%{transform: translateX(250px) translateY(-220px) rotateZ(-240deg) rotateX(60deg);}
+    55%{transform: translateX(200px) translateY(-175px) rotateZ(-300deg) rotateX(0deg);}
+    60%{transform: translateX(150px) translateY(-150px) rotateZ(-360deg) rotateX(60deg);}
+    65%{transform: translateX(350px) translateY(-75px) rotateZ(-180deg) rotateX(0deg);}
+    70%{transform: translateX(400px) rotateX(60deg);}
+    75%{transform: translateX(450px) translateY(-75px) rotateX(0deg);}
+    80%{transform: translateX(500px) translateY(-150px) rotateX(60deg);}
+    85%{transform: translateX(550px) translateY(-380px) rotateX(0deg);}
+    90%{transform: translateX(600px) rotateX(60deg);}
+    95%{transform: translateX(900px) translateY(-100px) rotateX(0deg);}
+    100%{transform: translateX(1200px) translateY(-200px) rotateX(60deg);}
+    }
+
+
+
+/*Beware of usability with hovers– size, speed, etc.*/
+/*Need position to use top, bottom, left and right*/
+/*Ease is default if you don't add linear or whatever other transition you want*/
+/*Could do 0%, 100% {width:600;} for a short cut- common on Codepen*/
+/*Can add as many keyframes as ya want*/
+/*Careful of spaces between rotate and degrees– don't have any ya fool*/
+/*You can only have one transform declaration in css at once or you'll break it*/

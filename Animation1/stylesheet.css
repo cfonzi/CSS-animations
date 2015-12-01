@@ -1,0 +1,203 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    margin: 0;}
+
+img {
+    max-width: 100%;}
+
+#ring {
+    text-align: center;
+    margin: 0 auto;
+    position: relative; 
+    left: 30%;
+    top: 60px;}
+
+
+#redCircle {
+    width: 400px; 
+    height: 400px;
+    background: transparent;
+    border: 30px solid #E6005C; 
+    border-radius: 100%;
+    animation: opacityRed 17s infinite, rotate 17s infinite;}
+
+#orangeCircle {
+    width: 340px; 
+    height: 340px;
+    background: transparent;
+    border: 30px solid #FF8585; 
+    border-radius: 100%;
+    position: relative; 
+    top: -430px; 
+    left: 30px;
+    animation: opacityOrange 17s infinite, rotate 17s infinite;}
+
+#yellowCircle {
+    width: 280px; 
+    height: 280px;
+    background: transparent;
+    border: 30px solid #FF5050; 
+    border-radius: 100%;
+    position: relative; 
+    top: -800px; 
+    left: 60px;
+    animation: opacityYellow 17s infinite, rotate 17s infinite;}
+
+#greenCircle {
+    width: 220px; 
+    height: 220px;
+    background: transparent;
+    border: 30px solid #FF9696; 
+    border-radius: 100%;
+    position: relative; 
+    top: -1110px; 
+    left: 90px;
+    animation: opacityGreen 17s infinite, rotate 17s infinite;}
+
+#blueCircle {
+    width: 160px; 
+    height: 160px;
+    background: transparent;
+    border: 30px solid #FF5C33; 
+    border-radius: 100%;
+    position: relative; 
+    top: -1360px; 
+    left: 120px;
+    animation: opacityBlue 17s infinite, rotate 17s infinite;}
+
+#purpleCircle {
+    width: 100px; 
+    height: 100px;
+    background: transparent;
+    border: 30px solid #FF6666; 
+    border-radius: 100%;
+    position: relative; 
+    top: -1550px; 
+    left: 150px;
+    animation: opacityPurple 17s infinite, rotate 17s infinite;}
+
+#pinkCircle {
+    width: 40px; 
+    height: 40px;
+    background: transparent;
+    border: 30px solid #FF704D; 
+    border-radius: 100%;
+    position: relative; 
+    top: -1680px; 
+    left: 180px;
+    animation: opacityPink 17s infinite, rotate 17s infinite;}
+
+
+@keyframes opacityRed {
+    0%{transform: scale(1.0);
+        opacity: 1.0;}
+    5%{transform: scale(1.1) ;
+        opacity: .5; } 
+    10%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityOrange {
+    11%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    15%{transform: scale(1.1) ;
+        opacity: .5; }
+    20%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityYellow {
+    21%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    25%{transform: scale(1.1) ;
+        opacity: .5; }
+    30%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityGreen {
+    31%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    35%{transform: scale(1.1) ;
+        opacity: .5; }
+    40%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityBlue {
+    41%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    45%{transform: scale(1.1) ;
+        opacity: .5; }
+    50%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityPurple {
+    51%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    55%{transform: scale(1.1) ;
+        opacity: .5; }
+    60%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes opacityPink {
+    61%{transform: scale(1.0) ;
+        opacity: 1.0;}
+    65%{transform: scale(1.1) ;
+        opacity: .5; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    70%{transform: scale(3.0) ;
+        opacity: 0; }
+    71%, 100%{transform: scale(1.0);
+        opacity: 1.0;}}
+
+@keyframes rotate {
+    72%{transform: rotateX(0deg);}
+    80%{transform: rotateX(90deg);}
+    85%{transform: rotateX(92deg) translateY(0px);}
+    90%{transform: rotateX(92deg) translateY(1000px);}
+    100%{transform: rotateX(92deg) scale(40.0);}}
+
+
+/*
+@keyframes rotate { 
+    0%{transform: rotateY(-60deg) rotateX(0deg) rotateZ(0deg);}
+    25%{transform: rotateY(-180deg) rotateX(90deg) rotateZ(90deg);}
+    50%{transform: rotateY(0deg) rotateX(240deg) rotateZ(240deg);}
+    75%{transform: rotateY(180deg) rotateX(-90deg) rotateZ(0deg);}
+    100%{transform: rotateY(60deg) rotateX(0deg) rotateZ(-90deg);}
+}
+*/
+
+
+/*Beware of usability with hovers– size, speed, etc.*/
+/*Need position to use top, bottom, left and right*/
+/*Ease is default if you don't add linear or whatever other transition you want*/
+/*Could do 0%, 100% {width:600;} for a short cut- common on Codepen*/
+/*Can add as many keyframes as ya want*/
+/*Careful of spaces between rotate and degrees– don't have any ya fool*/
+/*You can only have one transform declaration in css at once or you'll break it*/

@@ -1,0 +1,39 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    margin: 0;
+    background-image:url(background.jpg);}
+
+img {
+    max-width: 100%;}
+
+
+#text {
+    text-align: center;
+    position: relative; 
+    top: 350px;}
+
+#lucy {
+    animation: fly 10s infinite linear;
+    position: relative; 
+    left: -500px;}
+
+
+@keyframes fly {
+    0%{transform: rotateX(0deg);}
+    10%{transform: translateX(800px) rotateX(40deg);}
+    15%{transform: translateX(1100px) translateY(-500px);}
+    20%{transform: translateX(800px) translateY(-300px) scale(0.5);}
+    30%{transform: translateX(800px) translateY(-300px) scale(0.5);}
+    40%{transform: translateX(600px) translateY(-400px) rotateZ(60deg);}
+    50%{transform: translateX(1200px) translateY(-200px) rotateZ(40deg) scale(1.1);}
+    60%{transform: translateX(700px) rotateX(360deg) rotateY(360deg) scale(0.8);}
+    70%{transform: translateX(1000px);}
+    80%{transform: translateX(1100px) translateY(50px) rotateZ(360deg);}
+    90%{transform: translateX(1300px) translateY(300px);}
+    100%{transform: translateX(900px) rotateX(360deg) scale(5.0);}
+}
+
+

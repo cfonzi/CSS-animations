@@ -1,0 +1,56 @@
+/*CSS Stylesheet*/
+
+/** {border: 1px solid black;}*/
+
+body {
+    background: rgb(66, 58, 58);}
+
+img {
+    max-width: 100%;}
+
+#wrapper {
+    overflow: hidden;}
+
+.cool {
+    background-image: url(test2-01.png),
+        radial-gradient(circle, 
+        rgba(102,255,204,.8), 
+        rgba(102,204,255,.8), 
+        rgba(153,153,255,.8), 
+        rgba(255,255,255,.8));
+    background-color: rgb(66, 58, 58);
+    background-size: 100%, 50% 20%;
+    height: 100vh;
+    width:: 100vw;
+    position: relative; 
+    animation: cool 1s linear infinite, rotate 10s linear infinite;}
+
+
+@keyframes cool {
+    0%{background-position: 0 0;}
+    100%{background-position: 100% 0 ;}
+    }
+
+@keyframes rotate {
+    0%{transform: scale(1.0);}
+    5%{transform: scale(1.2);}
+    10%{transform: scale(1.0);}
+    15%{transform: scale(1.2);}
+    20%{transform: scale(1.0);}
+    25%{transform: scale(1.2);}
+    30%{transform: scale(1.0);}
+    45%{transform: scale(1.2);}
+    50%{transform: scale(1.0);}
+    55%{transform: scale(1.2);}
+    75%{transform: scale(3.0) rotateZ(600deg);}
+    100%{transform: scale(3.0);}
+    }
+
+
+/*Beware of usability with hovers– size, speed, etc.*/
+/*Need position to use top, bottom, left and right*/
+/*Ease is default if you don't add linear or whatever other transition you want*/
+/*Could do 0%, 100% {width:600;} for a short cut- common on Codepen*/
+/*Can add as many keyframes as ya want*/
+/*Careful of spaces between rotate and degrees– don't have any ya fool*/
+/*You can only have one transform declaration in css at once or you'll break it*/
